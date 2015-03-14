@@ -1,0 +1,12 @@
+Subsampling from 56498 recipes down to 45198
+{Undefined function or variable 'ingred_freq'.
+
+Error in RecipEntropyMeatsSingle (line 38)
+recipes_binary_subsamp =
+ExtractIngred(Ningred_used,ingred_freq,recipes_binary,ingreds);
+
+Error in wrapper_18ingreds_o0_s14 (line 2)
+addpath(genpath('/scratch/network/astrandb/recipentropy/'));
+RecipEntropyMeatsSingle(18,0,14,1)
+} 
+

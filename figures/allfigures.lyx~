@@ -1,0 +1,1350 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\makeatletter
+\renewcommand\@biblabel[1]{}
+\renewenvironment{thebibliography}[1]
+     {\section*{\refname}%
+      \@mkboth{\MakeUppercase\refname}{\MakeUppercase\refname}%
+      \list{\@biblabel{\@arabic\c@enumiv}}%
+           {\settowidth\labelwidth{\@biblabel{#1}}%
+            \leftmargin\labelwidth
+            \advance\leftmargin\labelsep
+            \itemindent-\labelsep
+            \@openbib@code
+            \usecounter{enumiv}%
+            \let\p@enumiv\@empty
+            \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+      \sloppy
+      \clubpenalty4000
+      \@clubpenalty \clubpenalty
+      \widowpenalty4000%
+      \sfcode`\.\@m}
+     {\def\@noitemerr
+       {\@latex@warning{Empty `thebibliography' environment}}%
+      \endlist}
+\makeatother
+\usepackage{cite}
+\usepackage{hyperref}
+  \hypersetup{colorlinks=true,citecolor=blue}
+\usepackage{indentfirst}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation 15bp
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+RecipEntropy Figures
+\end_layout
+
+\begin_layout Section
+Figures by Dataset
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/djstrouse/Documents/Dropbox/recipentropy/figures/standard/JS_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename standard/ents_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename standard/infos_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename standard/infofracs_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+Standard.
+
+\series default
+ Includes all ingredients and recipes.
+ These figures illustrate that, by the time we include just 18 ingredients,
+ a pairwise maxent model already starts to fail, with 
+\begin_inset Formula $D_{\text{JS}}\!\left[P^{\left(0\right)}\mid P^{\left(2\right)}\right]\rightarrow0.1$
+\end_inset
+
+ and the combination of 
+\begin_inset Formula $I_{2}/I_{N}\rightarrow0.8$
+\end_inset
+
+ and 
+\begin_inset Formula $I_{N}/H_{0}\rightarrow.25$
+\end_inset
+
+.
+ All trends indicates that a pairwise model will only become worse as more
+ ingredients are included.
+ This suggests that higher order correlations play an important role in
+ shaping recipes.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename meats/JS_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename meats/ents_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename meats/infos_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename meats/infofracs_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+Meats.
+
+\series default
+ Includes all recipes but only meats for ingredients.
+ In stark contrast to the full dataset (standard), the subset of meats exhibits
+ minimal structure, with a first-order model performing essentially perfectly
+ (
+\begin_inset Formula $D_{\text{JS}}\!\left[P^{\left(0\right)}\mid P^{\left(1\right)}\right]\approx0$
+\end_inset
+
+, 
+\begin_inset Formula $H_{0}\approx H_{1}$
+\end_inset
+
+, and 
+\begin_inset Formula $I_{2}\approx I_{N}\approx0$
+\end_inset
+
+).
+ Thus, not only are higher-order correlations unimportant, even 
+\emph on
+second-order
+\emph default
+ correlations appear to play a minimal role.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename spices/JS_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename spices/ents_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename spices/infos_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename spices/infofracs_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+Spices.
+
+\series default
+ Includes all recipes but only spices for ingredients.
+ These figures suggest higher-order structure, though perhaps not as much
+ as the full dataset.
+ While the information fractions 
+\begin_inset Formula $I_{2}/I_{N}$
+\end_inset
+
+ and 
+\begin_inset Formula $I_{N}/H_{0}$
+\end_inset
+
+ approach similar levels as when we used all the ingredients above, 
+\begin_inset Formula $D_{\text{JS}}\!\left[P^{\left(0\right)}\mid P^{\left(2\right)}\right]$
+\end_inset
+
+ is only half that of the full dataset.
+ However, it still approaches a not small number (
+\begin_inset Formula $\approx0.05$
+\end_inset
+
+) and looks as though it will continue to rise with more ingredients.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename cultures/NorthAmerican/JS_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/NorthAmerican/ents_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/NorthAmerican/infos_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/NorthAmerican/infofracs_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+North American.
+
+\series default
+ Includes all ingredients but only North American recipes.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename cultures/SouthernEuropean/JS_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/SouthernEuropean/ents_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/SouthernEuropean/infos_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/SouthernEuropean/infofracs_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+Southern European.
+
+\series default
+ Includes all ingredients but only Southern European recipes.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename cultures/LatinAmerican/JS_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/LatinAmerican/ents_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/LatinAmerican/infos_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/LatinAmerican/infofracs_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+Latin American.
+
+\series default
+ Includes all ingredients but only Latin American recipes.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename cultures/WesternEuropean/JS_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/WesternEuropean/ents_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/WesternEuropean/infos_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/WesternEuropean/infofracs_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+Western European.
+
+\series default
+ Includes all ingredients but only Western European recipes.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename cultures/EastAsian/JS_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/EastAsian/ents_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/EastAsian/infos_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/EastAsian/infofracs_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+East Asian.
+
+\series default
+ Includes all ingredients but only East Asian recipes.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Figures by Type
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename standard/JS_18in_titled_wNingred.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename meats/JS_18in_titled.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename spices/JS_18in_titled.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+Jensen-Shannon divergences for different ingredient subsets.
+
+\series default
+ In general, the maxent models perform better on subsets of the ingredients.
+ For the meats, a first-order model performs essentially perfectly.
+ For the spices, first- and second-order models perform roughly twice as
+ well as they do on the full ingredient set.
+ However, their declining performance with the number of ingredients included
+ suggests the importance of higher-order correlations there as well.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename standard/JS_18in_titled_wNrec.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/NorthAmerican/JS_18in_titled.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/SouthernEuropean/JS_18in_titled.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/LatinAmerican/JS_18in_titled.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/WesternEuropean/JS_18in_titled.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/EastAsian/JS_18in_titled.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+Jensen-Shannon divergences for different recipe subsets.
+
+\series default
+ As North American recipes dominate our dataset, we see that the plots for
+ North American are essentially the same as when one includes all of the
+ recipes.
+ In both cases, higher-order correlations play an important role with 
+\begin_inset Formula $D_{\text{JS}}\!\left[P^{\left(0\right)}\mid P^{\left(2\right)}\right]\rightarrow0.1$
+\end_inset
+
+ when 18 ingredients are included.
+ For Southern European recipes, 
+\begin_inset Formula $D_{\text{JS}}\!\left[P^{\left(0\right)}\mid P^{\left(2\right)}\right]\rightarrow0.15$
+\end_inset
+
+, for Latin America, 
+\begin_inset Formula $D_{\text{JS}}\!\left[P^{\left(0\right)}\mid P^{\left(2\right)}\right]\rightarrow0.225$
+\end_inset
+
+, for Western Europe, 
+\begin_inset Formula $D_{\text{JS}}\!\left[P^{\left(0\right)}\mid P^{\left(2\right)}\right]\rightarrow0.18$
+\end_inset
+
+, and for East Asia, 
+\begin_inset Formula $D_{\text{JS}}\!\left[P^{\left(0\right)}\mid P^{\left(2\right)}\right]\rightarrow0.1$
+\end_inset
+
+.
+ This suggests a 
+\begin_inset Quotes eld
+\end_inset
+
+complexity ordering
+\begin_inset Quotes erd
+\end_inset
+
+ of cuisines (from most to least) with Latin America at the top, followed
+ by Western Europe, then Southern Europe, and with North America and East
+ Asia rounding out the bottom.
+ However, this only holds for the top 18 ingredients of each cuisine, and
+ the results could change as more ingredients are included.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename standard/ents_18in_titled_wNingred.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename meats/ents_18in_titled.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename spices/ents_18in_titled.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+Entropies for different ingredient subsets.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename standard/ents_18in_titled_wNrec.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/NorthAmerican/ents_18in_titled.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/SouthernEuropean/ents_18in_titled.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/LatinAmerican/ents_18in_titled.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/WesternEuropean/ents_18in_titled.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/EastAsian/ents_18in_titled.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+Entropies for different recipe subsets.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename standard/infos_18in_titled_wNingred.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename meats/infos_18in_titled.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename spices/infos_18in_titled.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+Informations for different ingredient subsets.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename standard/infos_18in_titled_wNrec.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/NorthAmerican/infos_18in_titled.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/SouthernEuropean/infos_18in_titled.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/LatinAmerican/infos_18in_titled.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/WesternEuropean/infos_18in_titled.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/EastAsian/infos_18in_titled.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+Informations for different recipe subsets.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename standard/infofracs_18in_titled_wNingred.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename meats/infofracs_18in_titled.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename spices/infofracs_18in_titled.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+Information fractions for different ingredient subsets.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename standard/infofracs_18in_titled_wNrec.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/NorthAmerican/infofracs_18in_titled.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/SouthernEuropean/infofracs_18in_titled.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/LatinAmerican/infofracs_18in_titled.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/WesternEuropean/infofracs_18in_titled.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename cultures/EastAsian/infofracs_18in_titled.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+Information fractions for different recipe subsets.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Figures by Statistic
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename combined/JS01_insubsets_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename combined/JS01_recsubsets_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename combined/JS02_insubsets_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename combined/JS02_recsubsets_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename combined/JS12_insubsets_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename combined/JS12_recsubsets_18in.pdf
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+JS divergences.
+
+\series default
+ Left column compares divergences across ingredient subsets; right column
+ compares divergences across recipe subsets (cultures).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

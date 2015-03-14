@@ -1,0 +1,28 @@
+Subsampling from 56498 recipes down to 45198
+Using the following 14 ingredients:
+  Columns 1 through 6
+
+    'chicken'    'beef'    'bacon'    'pork'    'fish'    'shrimp'
+
+  Columns 7 through 13
+
+    'pork_sausage'    'ham'    'turkey'    'crab'    'lamb'    'clam'    'tuna'
+
+  Column 14
+
+    'salmon'
+
+Building model of order 1
+beginning order 1 maxent fitting
+beginning subsampling 1 of 1
+
+Local minimum possible.
+
+fminunc stopped because the final change in function value relative to 
+its initial value is less than the default value of the function tolerance.
+
+
+
+finished subsampling 1 of 1 in 4.01 minutes.
+finished order 1 maxent fitting
+Built model of order 1

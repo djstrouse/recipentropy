@@ -1,0 +1,4 @@
+#!/bin/sh
+#PBS -l nodes=1:ppn=4,walltime=3:00
+cd /scratch/network/astrandb/recipentropy
+/usr/licensed/bin/matlab -nodisplay -nosplash -nojvm -r test(2,3)

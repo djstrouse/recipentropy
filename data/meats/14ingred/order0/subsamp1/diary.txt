@@ -1,0 +1,36 @@
+Subsampling from 56498 recipes down to 45198
+Using the following 14 ingredients:
+  Columns 1 through 6
+
+    'chicken'    'beef'    'bacon'    'pork'    'fish'    'shrimp'
+
+  Columns 7 through 13
+
+    'pork_sausage'    'ham'    'turkey'    'crab'    'lamb'    'clam'    'tuna'
+
+  Column 14
+
+    'salmon'
+
+Subsampling raw frequencies
+beginning subsampling 1 of 1
+finished subsampling 1 of 1 in 0.04 minutes.
+Subsampled raw frequencies
+Subsampling from 56498 recipes down to 45198
+Using the following 14 ingredients:
+  Columns 1 through 6
+
+    'chicken'    'beef'    'bacon'    'pork'    'fish'    'shrimp'
+
+  Columns 7 through 13
+
+    'pork_sausage'    'ham'    'turkey'    'crab'    'lamb'    'clam'    'tuna'
+
+  Column 14
+
+    'salmon'
+
+Subsampling raw frequencies
+beginning subsampling 1 of 1
+finished subsampling 1 of 1 in 0.04 minutes.
+Subsampled raw frequencies

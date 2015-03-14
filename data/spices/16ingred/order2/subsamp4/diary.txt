@@ -1,0 +1,29 @@
+Subsampling from 56498 recipes down to 45198
+Using the following 16 ingredients:
+  Columns 1 through 5
+
+    'onion'    'garlic'    'black_pepper'    'pepper'    'vanilla'
+
+  Columns 6 through 11
+
+    'cinnamon'    'parsley'    'mustard'    'ginger'    'basil'    'cumin'
+
+  Columns 12 through 16
+
+    'oregano'    'thyme'    'nutmeg'    'cilantro'    'rosemary'
+
+Building model of order 2
+beginning order 2 maxent fitting
+beginning subsampling 1 of 1
+
+Local minimum possible.
+
+fminunc stopped because the final change in function value relative to 
+its initial value is less than the default value of the function tolerance.
+
+
+
+finished subsampling 1 of 1 in 695.14 minutes.
+finished order 2 maxent fitting
+finished order 2 maxent fitting
+Built model of order 2

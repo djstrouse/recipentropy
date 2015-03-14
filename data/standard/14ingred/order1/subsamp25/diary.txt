@@ -1,0 +1,62 @@
+Subsampling from 56498 recipes down to 45198
+Using the following 14 ingredients:
+    'egg'
+    'wheat'
+    'butter'
+    'onion'
+    'garlic'
+    'milk'
+    'vegetable_oil'
+    'cream'
+    'tomato'
+    'olive_oil'
+    'black_pepper'
+    'pepper'
+    'vanilla'
+    'cayenne'
+
+Building model of order 1
+beginning order 1 maxent fitting
+beginning subsampling 1 of 1
+
+Local minimum possible.
+
+fminunc stopped because the final change in function value relative to 
+its initial value is less than the default value of the function tolerance.
+
+
+
+finished subsampling 1 of 1 in 2.58 minutes.
+finished order 1 maxent fitting
+Built model of order 1
+Subsampling from 56498 recipes down to 45198
+Using the following 14 ingredients:
+    'egg'
+    'wheat'
+    'butter'
+    'onion'
+    'garlic'
+    'milk'
+    'vegetable_oil'
+    'cream'
+    'tomato'
+    'olive_oil'
+    'black_pepper'
+    'pepper'
+    'vanilla'
+    'cayenne'
+
+Building model of order 1
+beginning order 1 maxent fitting
+beginning subsampling 1 of 1
+
+Local minimum possible.
+
+fminunc stopped because the final change in function value relative to 
+its initial value is less than the default value of the function tolerance.
+
+
+
+finished subsampling 1 of 1 in 3.28 minutes.
+finished order 1 maxent fitting
+Built model of order 1

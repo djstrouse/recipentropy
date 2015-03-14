@@ -1,0 +1,14 @@
+Subsampling from 56498 recipes down to 45198
+Using the following 8 ingredients:
+  Columns 1 through 5
+
+    'onion'    'garlic'    'black_pepper'    'pepper'    'vanilla'
+
+  Columns 6 through 8
+
+    'cinnamon'    'parsley'    'mustard'
+
+Subsampling raw frequencies
+beginning subsampling 1 of 1
+finished subsampling 1 of 1 in 0.04 minutes.
+Subsampled raw frequencies

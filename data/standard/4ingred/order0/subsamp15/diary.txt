@@ -1,0 +1,11 @@
+Subsampling from 56498 recipes down to 45198
+Using the following 4 ingredients:
+    'egg'
+    'wheat'
+    'butter'
+    'onion'
+
+Subsampling raw frequencies
+beginning subsampling 1 of 1
+finished subsampling 1 of 1 in 0.04 minutes.
+Subsampled raw frequencies
